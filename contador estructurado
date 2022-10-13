@@ -1,0 +1,273 @@
+# contador = 0
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 1
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 2
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 3
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 4
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 5
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+
+def run():
+    LIMITE = 1000000
+
+    contador = 0
+    potencia_2 = 2**contador
+    while potencia_2 < LIMITE:
+        print('2 elevado a ' + str(contador) +
+              ' es igual a: ' + str(potencia_2))
+        contador = contador + 1
+        potencia_2 = 2**contador
+
+
+if __name__ == '__main__':
+    run()
+    
+    # def imprimir_mensaje():
+#     print('Mensaje especial: ')
+#     print('¡Estoy aprendiendo a usar funciones!')
+
+
+# imprimir_mensaje()
+# imprimir_mensaje()
+# imprimir_mensaje()
+
+
+# def conversacion(mensaje):
+#     print('Hola')
+#     print('Cómo estás')
+#     print(mensaje)
+#     print('Adios')
+
+
+# opcion = int(input('Elige una opción (1, 2, 3): '))
+# if opcion == 1:
+#     conversacion('Elegiste la opción 1')
+# elif opcion == 2:
+#     conversacion('Elegiste la opción 2')
+# elif opcion == 3:
+#     conversacion('Elegiste la opción 3')
+# else:
+#     print('Escribe la opción correcta')
+
+def suma(a, b):
+    print('Se suman dos números')
+    resultado = a + b
+    return resultado
+
+sumatoria = suma(1, 4)
+print(sumatoria)
+
+def run():
+    # nombre = input('Escribe tu nombre: ')
+    # for letra in nombre:
+    #     print(letra)
+
+    frase = input('Escribe una frase: ')
+    for caracter in frase:
+        print(caracter.upper())
+
+
+if __name__ == '__main__':
+    run()
+    
+    import random
+
+
+def run():
+    numero_aleatorio = random.randint(1, 100)
+    numero_elegido = int(input('Elige un número del 1 al 100: '))
+    while numero_elegido != numero_aleatorio:
+        if numero_elegido < numero_aleatorio:
+            print('Busca un número más grande')
+        else:
+            print('Busca un número más pequeño')
+        numero_elegido = int(input('Elige otro número: '))
+    print('¡Ganaste!')
+
+
+if __name__ == '__main__':
+    run()
+    
+import random
+
+
+def generar_contrasena():
+    mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    simbolos = ['!', '#', '$', '&', '/', '(', ')']
+    numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+
+    caracteres = mayusculas + minusculas + simbolos + numeros
+
+    contrasena = []
+
+    for i in range(15):
+        caracter_random = random.choice(caracteres)
+        contrasena.append(caracter_random)
+
+    contrasena = "".join(contrasena)
+    return contrasena
+
+
+def run():
+    contrasena = generar_contrasena()
+    print('Tu nueva contraseña es: ' + contrasena)
+
+
+if __name__ == '__main__':
+    run()
+    
+    # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# edad = int(input("Escribe tu edad: "))
+# if edad > 17:
+#    print('Eres mayor de edad')
+# else:
+#     print('Eres menor de edad')
+
+numero = int(input('Escribe un número: '))
+
+if numero > 5:
+    print('Es mayor a 5')
+elif numero == 5:
+    print('Es igual a 5')
+else:
+    print('Es menor a 5')
