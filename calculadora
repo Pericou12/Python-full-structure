@@ -1,0 +1,1248 @@
+El comando cd sirve para moverse de carpeta en carpeta
+● El comando ls muestra el contenido de una carpeta
+● El comando mkdir crea carpetas
+● El comando touch sirve para crear archivos
+
++ → suma
+● - → resta
+● * → multiplicación
+● / → división
+● // → división euclidiana (cociente)
+● % → módulo (resto de la división)
+● ** → potencia
+
+Ctrl + L = Limpiar pantalla
+CD = Change Directory
+… = Carpeta padre
+CD… = Cambiar de directorio a la carpeta padre
+Alt + 92 =
+ls = list
+mkdir = Make directory
+touch = para crear archivos
+
+
+Operadores en acción
+
+math.sqrt(9)  3.0
+math.sqrt(11.11)   
+ 3.3331666624997918
+math.sqrt(Decimal('6.25'))
+2.5
+
+Tipos de variables en Python
+a = 28 → int (entero)
+b = 1.5 → float (decimales)
+c = “Hello” → str (string o cadena de texto)
+
+
+d = True → boolean (verdadero o falso)
+e = None → NoneType (Sin valor)
+f = “5” → str (5 y “5” no son lo mismo. La primera es un entero y la segunda una cadena de texto)
+
+Tipos de datos primitivos en Python
+Integers: números Enteros
+Floats: números de punto flotante (decimales)
+Strings: cadena de caracteres (texto)
+Boolean: boolenaos (Verdadero o Falso)
+
+Tipos de dato adicionales
+Datos en texto: str
+Datos numéricos: int, float, complex
+Datos en secuencia: list, tuple, range
+Datos de mapeo: dict
+Set Types: set, frozenset
+Datos booleanos: bool
+Datos binarios: bytes, bytearray, memoryview
+
+Sintaxis Descripción
+
+int(var) variable a entero
+float(var) variable a flotante
+str(var) variable a texto
+bool(var)variable a booleano
+abs(var) variable a valor absoluto
+
+Ejemplo de conversión de datos en Python
+
+>>> number1 = input("Escribe un número: ")
+Escribe un número: 4
+>>> number2 = input("Escribe otro número: ")
+Escribe un número: 5
+>>> numero1 + numero 2
+=> '45' <== Se concatenan
+
+Solución:
+
+>>> number1 = int(input("Escribe un numero: "))
+Escribe un numero: 100
+>>> number2 = int(input("Escribe otro numero: "))
+Escribe otro numero: 300
+>>> number1 + number2
+=> 400
+Ejemplo 2:
+>>> numero1 = 4.5
+int(numero1)
+=> 4 <== Trunca el flotante
+Ejemplo 3:
+>>> numero1 = 4.5
+str(numero1)
+=> '4.5' <== Lo convierte a texto
+
+Operadores lógicos
+and ( y ): compara dos valores, y si ambos son verdaderos, devuelve True.
+or ( ó ): si al comparar dos valores y uno de los dos se cumple, devuelve True. Solo devuelve falso cuando los dos valores no se cumplen.
+not ( no): invierte el valor de una variable, dando el valor contrario al de la variable evaluada.
+
+Operadores de comparación
+== ( igual qué ): determina si dos valores son iguales o no.
+!= (diferente de): determina si dos valores son distintos o no. Si los valores son diferentes devuelve True, si son iguales devuelve False.
+> (mayor que): compara dos valores, y determina si es mayor que el otro.
+< (menor que): compara dos valores y determina si es menor que el otro.
+>= (mayor o igual): compara dos valores y determinas si es mayor o igual que el otro.
+<= (menor o igual): compara dos valores y determinas si es menor o igual que el otro.
+
+#Input del usuario calcuradora
+
+pesosmex = input("¿Cuantos pesos mexicanos tienes ?")
+pesosmex = float(pesosmex)
+#Declaracion de valores
+valor_dolar = 20
+valor_euro = 22
+valor_cake = 5
+valor_btc = 6134100
+#Calculo valor dolar
+dolares= pesosmex / valor_dolar
+dolares = round(dolares, 2)
+dolares = str(dolares)
+#Calculo Valor Euro
+euros= pesosmex / valor_euro
+euros = round(euros, 2)
+euros = str(euros)
+#Calculo Cantidad de CAKE
+cakes = pesosmex / valor_cake
+cakes = round(cakes, 4)
+cakes = str(cakes)
+#Calculo Bitcoin
+btcs = pesosmex / valor_btc
+btcs = round(btcs, 9)
+btcs = str(btcs)
+#Prints
+print("Tienes $"+ dolares + " dolares")
+print("Tienes $"+ euros + " Euros")
+print("Tienes: " + cakes + " CAKE")
+print("Tienes: " + btcs + " Bitcoins")
+
+if
+(Si) se usa para la condición principal.
+
+elif
+(Si no) en caso de que la condición principal o anterior no se cumpla, se puede utilizar para agregar otra condición.
+
+else
+(Sino) en caso de que la(s) condición(es) anterior(es) no se cumplan, se ejecuta como alternativa sin condicional.
+
+En lenguaje natural (español)
+‘Si’ introduce una oración en la que se indica una condición real o hipotética que se ha de cumplir necesariamente para que sea cierto o se produzca lo que se expresa: Si corres, lo alcanzarás.
+
+‘Sino’ es una conjunción adversativa que se escribe en una sola palabra y se usa, principalmente, para contraponer un concepto a otro: No estudia, sino que trabaja.
+
+‘Si no’** introduce una oración condicional: Si no estudias, no aprobarás.
+
+Ejemplo de condicionales en Python
+nacionalidad = input("¿Eres mexicano? (Responde sí o no) ")
+if nacionalidad == "sí":
+    cambio_a_pesos = 20.9865
+    dolares = str(round(float(input("¿Cuántos pesos tienes? "))/cambio_a_pesos, 2))
+    print("Entonces tienes " + dolares + " dólares.")
+elif nacionalidad == "no":
+    cambio_a_dolares = 0.25298
+    pesos = str(round(float(input("Bienvenido a Perú. ¿Cuántos dólares tienes? "))/cambio_a_dolares, 2))
+    print("Entonces tienes " + pesos + " pesos.")
+else:
+    print("Escribe sólo sí o no, por fa. ")
+    
+    # contador = 0
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 1
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 2
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 3
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 4
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+# contador = 5
+# print('2 elevado a ' + str(contador) + ' es igual a: ' + str(2**contador))
+
+
+def run():
+    LIMITE = 1000000
+
+    contador = 0
+    potencia_2 = 2**contador
+    while potencia_2 < LIMITE:
+        print('2 elevado a ' + str(contador) +
+              ' es igual a: ' + str(potencia_2))
+        contador = contador + 1
+        potencia_2 = 2**contador
+
+
+if __name__ == '__main__':
+    run()
+    
+    Cómo usar def en Python
+def nombredelafuncion():
+    # instrucciones de la función
+Ejemplo de funciones con def en Python
+def conversacion(opcion):
+    print('Hola')
+    print('Cómo estás')
+    print('Elegiste la opcion: ' + str(opcion))
+    print('Adiós')
+
+opcion = int(input('Ingrese una opción (1, 2, 3): '))
+
+if opcion == 1:
+    conversacion(opcion)
+
+elif opcion == 2:
+    conversacion(opcion)
+
+elif opcion == 3:
+    conversacion(opcion)
+
+else:
+    print('Escribe una opción correcta.')
+    
+    # def imprimir_mensaje():
+#     print('Mensaje especial: ')
+#     print('¡Estoy aprendiendo a usar funciones!')
+
+
+# imprimir_mensaje()
+# imprimir_mensaje()
+# imprimir_mensaje()
+
+
+# def conversacion(mensaje):
+#     print('Hola')
+#     print('Cómo estás')
+#     print(mensaje)
+#     print('Adios')
+
+
+# opcion = int(input('Elige una opción (1, 2, 3): '))
+# if opcion == 1:
+#     conversacion('Elegiste la opción 1')
+# elif opcion == 2:
+#     conversacion('Elegiste la opción 2')
+# elif opcion == 3:
+#     conversacion('Elegiste la opción 3')
+# else:
+#     print('Escribe la opción correcta')
+
+def suma(a, b):
+    print('Se suman dos números')
+    resultado = a + b
+    return resultado
+
+sumatoria = suma(1, 4)
+print(sumatoria)
+
+def run():
+    # nombre = input('Escribe tu nombre: ')
+    # for letra in nombre:
+    #     print(letra)
+
+    frase = input('Escribe una frase: ')
+    for caracter in frase:
+        print(caracter.upper())
+
+
+if __name__ == '__main__':
+    run()
+    
+    import random
+
+
+def run():
+    numero_aleatorio = random.randint(1, 100)
+    numero_elegido = int(input('Elige un número del 1 al 100: '))
+    while numero_elegido != numero_aleatorio:
+        if numero_elegido < numero_aleatorio:
+            print('Busca un número más grande')
+        else:
+            print('Busca un número más pequeño')
+        numero_elegido = int(input('Elige otro número: '))
+    print('¡Ganaste!')
+
+
+if __name__ == '__main__':
+    run()
+    
+    import random
+
+
+def generar_contrasena():
+    mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    simbolos = ['!', '#', '$', '&', '/', '(', ')']
+    numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+
+    caracteres = mayusculas + minusculas + simbolos + numeros
+
+    contrasena = []
+
+    for i in range(15):
+        caracter_random = random.choice(caracteres)
+        contrasena.append(caracter_random)
+
+    contrasena = "".join(contrasena)
+    return contrasena
+
+
+def run():
+    contrasena = generar_contrasena()
+    print('Tu nueva contraseña es: ' + contrasena)
+
+
+if __name__ == '__main__':
+    run()
+    
+    # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+# edad = int(input("Escribe tu edad: "))
+# if edad > 17:
+#    print('Eres mayor de edad')
+# else:
+#     print('Eres menor de edad')
+
+numero = int(input('Escribe un número: '))
+
+if numero > 5:
+    print('Es mayor a 5')
+elif numero == 5:
+    print('Es igual a 5')
+else:
+    print('Es menor a 5')
+def conversor(tipo_pesos, valor_dolar):
+    pesos = input("¿Cuántos pesos " + tipo_pesos + " tienes?: ")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+
+
+menu = """
+Bienvenido al conversor de monedas 💰
+
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opción: """
+
+opcion = int(input(menu))
+
+if opcion == 1:
+    conversor("colombianos", 3875)
+elif opcion == 2:
+    conversor("argentinos", 65)
+elif opcion == 3:
+    conversor("mexicanos", 24)
+else:
+    print('Ingresa una opción correcta por favor')
+    
+    # print(1)
+# print(2)
+# print(3)
+# print(4)
+# print(5)
+
+# contador = 1
+# print(contador)
+# while contador < 1000:
+#     contador += 1
+#     print(contador)
+
+# a = list(range(1000))
+# print(a)
+
+# for contador in range(1, 1001):
+#     print(contador)
+
+for i in range(10):
+    print(11 * i)
+    
+ Primalidad
+    def es_primo(numero):
+    contador = 0
+
+    for i in range(1, numero + 1):
+        if i == 1 or i == numero:
+            continue
+        if numero % i == 0:
+            contador += 1
+    if contador == 0:
+        return True
+    else:
+        return False
+
+
+def run():
+    numero = int(input('Escribe un número: '))
+    if es_primo(numero):
+        print('Es primo')
+    else:
+        print('No es primo')
+
+
+if __name__ == '__main__':
+    run()
+    
+    def run():
+    mi_diccionario = {
+        'llave1': 1,
+        'llave2': 2,
+        'llave3': 3,
+    }
+
+    # print(mi_diccionario['llave1'])
+    # print(mi_diccionario['llave2'])
+    # print(mi_diccionario['llave3'])
+
+    poblacion_paises = {
+        'Argentina': 44938712,
+        'Brasil': 210147125,
+        'Colombia': 50372424
+    }
+
+    # print(poblacion_paises['Bolivia'])
+
+    # for pais in poblacion_paises.keys():
+    #     print(pais)
+
+    # for pais in poblacion_paises.values():
+    #     print(pais)
+
+    for pais, poblacion in poblacion_paises.items():
+        print(pais + ' tiene ' + str(poblacion) + ' habitantes')
+
+
+if __name__ == '__main__':
+    run()
+    
+    import random
+
+
+def generar_contrasena():
+    mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+    simbolos = ['!', '#', '$', '&', '/', '(', ')']
+    numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+
+    caracteres = mayusculas + minusculas + simbolos + numeros
+
+    contrasena = []
+
+    for i in range(15):
+        caracter_random = random.choice(caracteres)
+        contrasena.append(caracter_random)
+
+    contrasena = "".join(contrasena)
+    return contrasena
+
+
+def run():
+    contrasena = generar_contrasena()
+    print('Tu nueva contraseña es: ' + contrasena)
+
+
+if __name__ == '__main__':
+ run()
+ 
+ # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# edad = int(input("Escribe tu edad: "))
+# if edad > 17:
+#    print('Eres mayor de edad')
+# else:
+#     print('Eres menor de edad')
+
+numero = int(input('Escribe un número: '))
+
+if numero > 5:
+    print('Es mayor a 5')
+elif numero == 5:
+    print('Es igual a 5')
+else:
+    print('Es menor a 5')
+    
+    def conversor(tipo_pesos, valor_dolar):
+    pesos = input("¿Cuántos pesos " + tipo_pesos + " tienes?: ")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+
+
+menu = """
+Bienvenido al conversor de monedas 💰
+
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opción: """
+
+opcion = int(input(menu))
+
+if opcion == 1:
+    conversor("colombianos", 3875)
+elif opcion == 2:
+    conversor("argentinos", 65)
+elif opcion == 3:
+    conversor("mexicanos", 24)
+else:
+    print('Ingresa una opción correcta por favor')
+    
+    # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# edad = int(input("Escribe tu edad: "))
+# if edad > 17:
+#    print('Eres mayor de edad')
+# else:
+#     print('Eres menor de edad')
+
+numero = int(input('Escribe un número: '))
+
+if numero > 5:
+    print('Es mayor a 5')
+elif numero == 5:
+    print('Es igual a 5')
+else:
+    print('Es menor a 5')
+    
+    def conversor(tipo_pesos, valor_dolar):
+    pesos = input("¿Cuántos pesos " + tipo_pesos + " tienes?: ")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+
+
+menu = """
+Bienvenido al conversor de monedas 💰
+
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opción: """
+
+opcion = int(input(menu))
+
+if opcion == 1:
+    conversor("colombianos", 3875)
+elif opcion == 2:
+    conversor("argentinos", 65)
+elif opcion == 3:
+    conversor("mexicanos", 24)
+else:
+    print('Ingresa una opción correcta por favor')
+    
+    # print(1)
+# print(2)
+# print(3)
+# print(4)
+# print(5)
+
+# contador = 1
+# print(contador)
+# while contador < 1000:
+#     contador += 1
+#     print(contador)
+
+# a = list(range(1000))
+# print(a)
+
+# for contador in range(1, 1001):
+#     print(contador)
+
+for i in range(10):
+    print(11 * i)
+    # Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# edad = int(input("Escribe tu edad: "))
+# if edad > 17:
+#    print('Eres mayor de edad')
+# else:
+#     print('Eres menor de edad')
+
+numero = int(input('Escribe un número: '))
+
+if numero > 5:
+    print('Es mayor a 5')
+elif numero == 5:
+    print('Es igual a 5')
+else:
+    print('Es menor a 5')
+    
+    def conversor(tipo_pesos, valor_dolar):
+    pesos = input("¿Cuántos pesos " + tipo_pesos + " tienes?: ")
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes $" + dolares + " dólares")
+
+
+menu = """
+Bienvenido al conversor de monedas 💰
+
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opción: """
+
+opcion = int(input(menu))
+
+if opcion == 1:
+    conversor("colombianos", 3875)
+elif opcion == 2:
+    conversor("argentinos", 65)
+elif opcion == 3:
+    conversor("mexicanos", 24)
+else:
+    print('Ingresa una opción correcta por favor')
+    
+    # print(1)
+# print(2)
+# print(3)
+# print(4)
+# print(5)
+
+# contador = 1
+# print(contador)
+# while contador < 1000:
+#     contador += 1
+#     print(contador)
+
+# a = list(range(1000))
+# print(a)
+
+# for contador in range(1, 1001):
+#     print(contador)
+
+for i in range(10):
+    print(11 * i)
+    
+    MIT License
+
+Copyright (c) 2020 Facundo García Martoni
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+def es_primo(numero):
+    contador = 0
+
+    for i in range(1, numero + 1):
+        if i == 1 or i == numero:
+            continue
+        if numero % i == 0:
+            contador += 1
+    if contador == 0:
+        return True
+    else:
+        return False
+
+
+def run():
+    numero = int(input('Escribe un número: '))
+    if es_primo(numero):
+        print('Es primo')
+    else:
+        print('No es primo')
+
+
+if __name__ == '__main__':
+    run()
+    
+    def run():
+    # for contador in range(1000):
+    #     if contador % 2 != 0:
+    #         continue
+    #     print(contador)
+
+    # for i in range(10000):
+    #     print(i)
+    #     if i == 5678:
+    #         break
+
+    texto = input('Escribe un texto: ')
+    for letra in texto:
+        if letra == 'o':
+            break
+        print(letra)
+
+
+if __name__ == '__main__':
+    run()
+    
+    def palindromo(palabra):
+    palabra = palabra.replace(' ', '')
+    palabra = palabra.lower()
+    palabra_invertida = palabra[::-1]
+    if palabra == palabra_invertida:
+        return True
+    else:
+        return False
+
+
+def run():
+    palabra = input('Escribe una palabra: ')
+    es_palindromo = palindromo(palabra)
+    if es_palindromo == True:
+        print('Es palíndromo')
+    else:
+        print('No es palíndromo')
+
+
+if __name__ == '__main__':
+    run()
